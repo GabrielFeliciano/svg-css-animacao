@@ -1,0 +1,92 @@
+main h1, .container-cards h2 {
+  font-family: 'Pacifico', cursive;
+  color: #BE253F;
+  text-align: center;
+}
+
+.fill-horizontal-viewport {
+  width: 100vw;
+}
+
+body {
+  background-color: #ffead4;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100vw;
+}
+
+.lett-header {
+  position: absolute;
+  left: 50%;
+  top: unset;
+  transform: translate(-50%, 0);
+  width: 80%;
+  margin-top: 10%;
+  fill: transparent;
+  animation: lett-fill 3s ease-in-out forwards 1s;
+}
+.lett-header path {
+  stroke-width: 2px;
+  stroke: #be253f;
+  stroke-dashoffset: 1500;
+  stroke-dasharray: 1500;
+  animation: lett-stroke 3s ease-in-out forwards .2s;
+}
+
+@keyframes lett-fill {
+  to {
+    fill: #be253f;
+  }
+}
+@keyframes lett-stroke {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+main h1 {
+  font-size: 3em;
+  width: 100%;
+}
+
+.container-cards {
+  width: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+}
+.container-cards h2 {
+  margin: .6em 0;
+  font-size: 1.5em;
+}
+.container-cards p {
+  font-family: 'Lato', sans-serif;
+  color: #484848;
+  font-size: 1em;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: 40%;
+  padding: 20px;
+  transition: ease-in;
+  min-width: 200px;
+}
+
+.card svg {
+  animation: pulsing-size 1s ease-in infinite alternate;
+}
+
+@keyframes pulsing-size {
+  to {
+    transform: scale(0.8);
+  }
+}
+.div-teste {
+  height: 500px;
+}

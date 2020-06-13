@@ -1,0 +1,11 @@
+@mixin place-by-absolute-position ($x, $y, $off-set-x: -50%, $off-set-y: -50%) {
+    left: $x;
+    top: $y;
+    transform: translate($off-set-x, $off-set-y);
+}
+
+%font-main {
+    font-family: 'Pacifico', cursive;
+    color: #BE253F;
+    text-align: center;
+}
